@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white">Navbar</a>
+          <form class="d-flex" role="search">
+            <input
+              id="search-input"
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-success text-white btn-search"
+              type="submit"
+            >
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <section class="main-container d-flex flex-column align-items-center my-5">
+      <div
+        id="meals-container"
+        class="meals-container text-center my-5 d-flex flex-wrap justify-content-center gap-4"
+      ></div>
+    </section>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="details_page"
+      tabindex="-1"
+      aria-labelledby="details_pageLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="details_pageLabel">title</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div id="modal-body" class="modal-body"></div>
+          <div id="requirement-section" class="requirements">
+            <h5 class="text-center">Requirements:</h5>
+
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Ingredients</th>
+                  <th scope="col">Measurement</th>
+                </tr>
+              </thead>
+              <tbody id="requirement-table"></tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <div id="modal-footer-content"></div>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/3a97aa5ed7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>

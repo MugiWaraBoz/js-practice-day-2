@@ -1,0 +1,40 @@
+.cart-button {
+  position: fixed;
+  right: 35px;
+  bottom: 35px;
+  height: 80px;
+  width: 80px;
+  background-color: #0400ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 50%;
+}
+
+.cart-button:hover {
+  background-color: #6764ff;
+}
+
+.main-container {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.card img {
+  padding: 15px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.card p {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#cart-products img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
