@@ -1,1 +1,1 @@
-# js-practice-day-2
+JavaScript API Practice for Phitron
